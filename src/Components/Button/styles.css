@@ -1,0 +1,13 @@
+.primary-button {
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #11ACED;
+  border: none;
+  color: #fff;
+}
+
+.primary-button:hover {
+  background-color: #5686FF;
+}
