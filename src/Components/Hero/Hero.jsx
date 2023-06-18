@@ -10,8 +10,6 @@ const Hero = () => {
 
   const normalizeData = data?.danoneEcoAndHealthyCollection.items[0]
 
-  console.log(normalizeData)
-
   if (loading) return <p>Loading...</p>
 
   return (
@@ -20,7 +18,7 @@ const Hero = () => {
         <div className="container hero-content">
           <h1>{normalizeData.homepageTitle}</h1>
           <p className="hero-description">{normalizeData.homepageDescription}</p>
-          <Button>{normalizeData.homepageButton}</Button>
+          <Button to="/diary">{normalizeData.homepageButton}</Button>
         </div>
       </div>
 

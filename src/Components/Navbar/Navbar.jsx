@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 const mainNavigation = {
@@ -15,10 +16,6 @@ const mainNavigation = {
       label: 'Diary',
       path: '/diary'
     },
-    {
-      label: 'Contact',
-      path: '/contact'
-    }
   ]
 }
 
@@ -29,7 +26,7 @@ const Nav = () => {
         {
           mainNavigation.menu.map(item => {
             return (
-              <a href={item.path}>{item.label}</a>
+              <Link to={item.path}>{item.label}</Link>
             )
           })
         }

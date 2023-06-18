@@ -1,14 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './styles.css'
 
-const Button = ({ children, ...props }) => {
+const Button = ({ children, to, ...props }) => {
   return (
-    <button
+    <Link
+      as="button"
       className="primary-button"
+      to={to}
       { ...props }
     >
       { children }
-    </button>
+    </Link>
   )
 }
 
