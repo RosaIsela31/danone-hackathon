@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Danone Hackathon Eco Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The objective of this Danone's landing page is to promote a range of organic and healthier products. 
+This project contain the follow views: 
 
-## Available Scripts
+• Home page: view showing an introduction to the application.
+• Product page: catalogue listing Danone's eco range products, if you click a card a modal will open to show more details about the product.
+• Daily calorie settings page: view where users can set their maximum daily calorie limit. This
+view include a form where the user can enter the amount of calories they wish to consume as a maximum in a day.
 
-In the project directory, you can run:
+## Basic Structure
 
-### `npm start`
+<img width="643" alt="image" src="https://github.com/RosaIsela31/danone-hackathon/assets/50505959/3f39cd84-8a44-4bfb-bf34-6d7eadb0359b">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Contentful as content managment system
+- GraphQL to query request
+- Apollo client for the client
+- React as JS framework
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deploy 
+https://danone-hackathon-psi.vercel.app/
 
-### `npm test`
+## Documentation 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps to install locally
+1. git clone of the repo
+2. npm install
+3. npm run start
+4. go to `https://localhost:3000` to see the app
 
-### `npm run build`
+### Stack 
+- Contentful
+- GraphQL
+- Apollo client
+- React
+- CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Usage
+- `https://danone-hackathon-psi.vercel.app/` view is home, that contain an introduction 
+- `https://danone-hackathon-psi.vercel.app/products` view contain the products in cards, if you click a card a modal will open to show you more details about it.
+- `https://danone-hackathon-psi.vercel.app/diary` view contain a form to set your maxim calories per day, also you can add the calories in breakfast, lunch, dinner and snack and you're going to see the calories remained 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Decision Maked | Steps I took in the process
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Understand the objective of the challenge and break down the important points.
+2. Since I have no experience with contentful and connecting to graphql will be the first thing I will do, in case I need technical help.
+3. Stack to use, headless: contentful, graphql, apollo client for the app client, react because I have experience with this framework. 
+4. I started with the design of my content model, I was analyzing the figma views to see the necessary fields.
+5. I used Apollo client to connect my App with contentfull
+6. I used graphql for get the data
+7. Once I had the data in the FE I started the layout
+8. I used react-router to create the routing of my app.
+9. I decided to make it responsive, the homepage has areas of opportunity.
